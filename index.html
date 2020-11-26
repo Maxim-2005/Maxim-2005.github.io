@@ -18,7 +18,7 @@ xF=1, yF=1,
 xZ=xS/2, yZ=yS/2,
 vK, xK=0, yK=0,
 xZarr=[], yZarr=[], arr=0,
-imgS=new Image(), imgF=new Image(), pattern,
+imgS=new Image(), imgF=new Image(),
 audFruit=new Audio(), audFeil=new Audio();
 imgS.src="trava.png";
 imgF.src="Frukt.png";
@@ -52,8 +52,7 @@ yZarr.length=1;
 rS=0;
 };
 setInterval(function(){
-pattern=ctx.createPattern(imgS, "repeat");
-ctx.fillStyle=pattern;
+ctx.fillStyle=ctx.createPattern(imgS, "repeat");
 ctx.fillRect(0, 0, xS, yS);
 ctx.drawImage(imgF, xF, yF);
 xZ=xZ+xK;
