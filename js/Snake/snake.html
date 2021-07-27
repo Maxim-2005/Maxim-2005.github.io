@@ -16,7 +16,7 @@ tS=1000/25, qS=25,
 qS=25, rS=0,
 xF=1, yF=1,
 xZ=xS/2, yZ=yS/2,
-vK, xK=0, yK=0,
+vK, Tk, xK=0, yK=0,
 xZarr=[], yZarr=[], arr=0,
 imgS=new Image(), imgF=new Image(),
 audFruit=new Audio(), audFail=new Audio();
@@ -37,10 +37,10 @@ for (arr=0; arr<=rS; arr++) if (xZarr[arr]==xF && yZarr[arr]==yF) fruit();
 onkeydown=function(event) {
 event.preventDefault();
 switch (event.keyCode) {
-case 38: case 87: if (vK!=1) {xK=0, yK=-qS, vK=1}; break;
-case 39: case 68: if (vK!=2) {xK=qS, yK=0, vK=2}; break;
-case 40: case 83: if (vK!=1) {xK=0, yK=qS, vK=1}; break;
-case 37: case 65: if (vK!=2) {xK=-qS, yK=0, vK=2}; break;
+case 38: case 87: if (vK!=1) {xK=0, yK=-qS, Tk=1}; break;
+case 39: case 68: if (vK!=2) {xK=qS, yK=0, Tk=2}; break;
+case 40: case 83: if (vK!=1) {xK=0, yK=qS, Tk=1}; break;
+case 37: case 65: if (vK!=2) {xK=-qS, yK=0, Tk=2}; break;
 }
 };
 function fail() {
@@ -55,6 +55,7 @@ setInterval(function(){
 ctx.fillStyle=ctx.createPattern(imgS, "repeat");
 ctx.fillRect(0, 0, xS, yS);
 ctx.drawImage(imgF, xF, yF);
+vK=Tk;
 xZ=xZ+xK;
 if (xZ >= xS) xZ=0;
 if (xZ < 0) xZ=xS-qS;
