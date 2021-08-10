@@ -1,7 +1,15 @@
+body{
+    background-color: white;
+}
+
+section {
+    display: flex;
+    width: 1950px;
+    flex-wrap: wrap;
+}
+
 header{
-    left: 0px;
-    right: 0px;
-    top: 0px;
+    left:0;
 }
 
 /* MAXIM */
@@ -32,10 +40,14 @@ header{
     background-color:Red;
 }
 
+#programs{
+    margin: auto;
+}
+
 .program{
-    margin: 5%;
-    width: 296px;
-    height: 275px;
+    margin: 2.2%;
+    width: 350px;
+    height: 350px;
     left: 23px;
     top: 16px;
     background: #FFFFFF;
@@ -49,9 +61,9 @@ header{
     /* Year */
     position:relative;
     margin: -5%;
-    width: 61.55px;
-    height: 24.86px;
-    left: 8px;
+    width: 70px;
+    height: 30px;
+    left: 0px;
     top: 18px;
 
     background: #2F7DAC;
@@ -66,10 +78,10 @@ header{
 .prog-year{
     position:relative;
     margin: -6%;
-    width: 52px;
-    height: 22px;
-    left: 12px;
-    top: 11px;
+    width: 20px;
+    height: 20px;
+    left: 6px;
+    top: 17px;
 
     font-family: Verdana;
     font-style: normal;
