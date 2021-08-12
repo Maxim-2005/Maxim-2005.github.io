@@ -27,20 +27,45 @@ var listProg=[
     ["Rock Papper Scissors", "2020", "img/Hello World(batch).png", "A game against the computer with a random choice"]
 ];
 
-var programs=document.getElementById("programs");
+var section=document.getElementById("style_");
 
 for (let i of listProg) {
     let block=document.createElement("article");
     block.className="program";
+    section.appendChild(block);
 
-    let year_bg=document.createElement("div");
-    year_bg.className="prog-year-bg";
-    block.appendChild(year_bg);
+    let bg_img=document.createElement("img");
+    bg_img.className="pr-bg_img";
+    bg_img.src=i[2];
+    block.appendChild(bg_img);
+
+    let image=document.createElement("img");
+    image.className="pr-image";
+    image.src=i[2];
+    block.appendChild(image);
+
+    let lang=document.createElement("img");
+    lang.className="pr-lang logo";
+    lang.src=nt; // ЗАМЕНИТЬ
+    block.appendChild(lang);
+
+    let tool=document.createElement("img");
+    tool.className="pr-tool logo";
+    tool.src=nt; // ЗАМЕНИТЬ
+    block.appendChild(tool);
+
+    let text=document.createElement("div");
+    text.className="pr-text";
+    text.textContent=i[3];
+    block.appendChild(text);
+
+    let name=document.createElement("div");
+    name.className="pr-name";
+    name.textContent=i[0];
+    block.appendChild(name);
 
     let year=document.createElement("div");
-    year.className="prog-year";
+    year.className="pr-year";
+    year.textContent=i[1];
     block.appendChild(year);
-
-    block.textContent=i[0];
-    programs.appendChild(block);
 };
