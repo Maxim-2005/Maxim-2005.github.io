@@ -10,87 +10,44 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
   </script>
     <link rel="shortcut icon" href="js/Snake/snake.ico" type="image/x-icon">
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <link rel="stylesheet" href="css/style_.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="img-fluid">
-            <img src="img/photo.jpg" class="header-img" alt="">
-            <p class="header-text">Maxim</p>
+        <div class = "photo">
+            <img src="img/photo.png" class="avatar">
         </div>
     </header>
     <main>
+        <!--MY GAMES-->
+        <h3>MY GAMES</h3>
+        <section id="games">
+        <!--Секция игр-->
+        <a href="js/Snake/snake.html"
+		    onclick="window.open(this.href, '', 'scrollbars=1, height='+Math.min(710, screen.availHeight)+', width='+Math.min(835, screen.availWidth)); return false;">
+		    <img class="game" src="js/Snake/Snake.png"/><br />
+            <h1>SNAKE</h1>
+        </a>
+        </section>
         <!--MY PROGRAMS-->
+        <h3>MY PROGRAMS</h3>
         <section id="programs">
             <!--Секция кода программы-->
         </section>
-
-        <section>
-            <div class='program'>
-                <div class='prog-year-bg'>
-                </div>
-                <div class='prog-year'>
-                    <h4>2018</h4>
-                </div>
-                <div class='prog-name'>
-                    <h3>Hello World</h3>
-                </div>
-                <div class='prog-image'>
-                    <img src="img/Hello World(batch).png" class='prog-image' alt="">
-                </div>
-                <div class='prog-desc'>
-                    <h3>My first program</h3>
-                </div>
-            </div>
-
-            <div class='program'>
-                <div class='prog-year-bg'>
-                </div>
-                <div class='prog-year'>
-                    <h4>2018</h4>
-                </div>
-                <div class='prog-name'>
-                    <h3>Hello World</h3>
-                </div>
-                <div class='prog-image'>
-                    <img src="img/Hello World(batch).png" class='prog-image' alt="">
-                </div>
-                <div class='prog-desc'>
-                    <h3>My first program</h3>
-                </div>
-            </div> 
-
-            <div class='program'>
-                <div class='prog-year-bg'>
-                </div>
-                <div class='prog-year'>
-                    <h4>2018</h4>
-                </div>
-                <div class='prog-name'>
-                    <h3>Hello World</h3>
-                </div>
-                <div class='prog-image'>
-                    <img src="img/Hello World(batch).png" class='prog-image' alt="">
-                </div>
-                <div class='prog-desc'>
-                    <h3>My first program</h3>
-                </div>
-            </div> 
+        <!--TOOLBOX-->
+        <h3>MY TOOLBOX</h3>
+        <section id="tools">
+            <!--Секция инструментов-->
         </section>
-        <section id="style_">
-            <!--Пример секции-->
-
+        <h3>PROGRAMMING LANGUAGES THAT I KNOW</h3>
+        <section id="languages">
+            <!--Секция языков программирования-->
         </section>
     </main>
     <footer class='footer'>
-        <a href="js/Snake/snake.html"
-		onclick="window.open(this.href, '', 'scrollbars=1, height='+Math.min(710, screen.availHeight)+', width='+Math.min(835, screen.availWidth)); return false;">
-		<img src="js/Snake/Snake.png"/><br />
-        <p>Игра змейка.</p>
-    </a>
     </footer>
     <script src="js/Script.js"></script>
-    <script src="style.css"></script>
+    <script src="js/ScriptTools.js"></script>
+    <script src="js/ScriptLanguage.js"></script>
 </body>
 </html>
