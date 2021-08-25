@@ -68,3 +68,16 @@ for (let i of listProg) {
     year.textContent=i[1];
     block.appendChild(year);
 };
+
+var up=document.getElementById("up");
+up.onclick=()=>{
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+}
+
+window.onscroll=()=>{
+    if(document.body.scrollTop>512 || document.documentElement.scrollTop>512)
+        up.style.display="block";
+    else
+        up.style.display="none";
+}
