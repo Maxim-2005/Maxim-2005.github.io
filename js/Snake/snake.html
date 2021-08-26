@@ -6,7 +6,7 @@
 <link rel="shortcut icon" href="snake.ico" type="image/x-icon">
 </head>
 <body>
-<h1>Змейка</h1>
+<h1>Snake</h1>
 <canvas id="snake" width="800" height="600">Обновите браузер (HTML 5 не поддерживается)</canvas>
 <script type ="text/javascript">
 var snake=document.getElementById("snake"),
@@ -44,7 +44,7 @@ case 37: case 65: if (vK!=2) {xK=-qS, yK=0, Tk=2}; break;
 }
 };
 function fail() {
-ctx.fillStyle="blue";
+ctx.fillStyle="white";
 ctx.fillRect(0,0,xS,yS)
 audFail.play();
 xZarr.length=1;
@@ -65,7 +65,7 @@ if (yZ < 0) yZ=yS-qS;
 for (arr=0; arr<=rS; arr++) if (xZarr[arr]==xZ && yZarr[arr]==yZ) fail();
 xZarr.unshift(xZ);
 yZarr.unshift(yZ);
-ctx.fillStyle="White";
+ctx.fillStyle="DeepSkyBlue";
 for (arr=0; arr<=rS; arr++) ctx.fillRect(xZarr[arr]+1, yZarr[arr]+1, qS-2 , qS-2);
 if (xZ==xF && yZ==yF) {
 audFruit.play();
@@ -75,7 +75,7 @@ rS++;
 xZarr.pop();
 yZarr.pop();
 };
-ctx.fillStyle="Black";
+ctx.fillStyle="white";
 ctx.font="bold 13pt Arial";
 ctx.fillText(rS+1, xF+qS/2, yF+qS/2);
 }, tS);
