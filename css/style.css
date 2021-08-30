@@ -6,6 +6,10 @@ header{
     position:relative;
 }
 
+body{
+    background-color: #333333;
+}
+
 nav{
     z-index: 1;
     position:fixed;
@@ -20,13 +24,17 @@ nav{
     font-style: normal;
     font-weight: bold;
 
-    background: #2F7DAC;
-    border: 0 solid #FFFFFF;
+    background: #333333;
+    border: 0.2em solid #CC66FF;
     border-radius:0 100% 100% 0;
 }
 
+a{
+    color:#CC66FF;
+}
+
 nav a{
-    color:white;
+    color:#CC66FF;
 }
 
 section{
@@ -48,8 +56,8 @@ img{
 }
 
 .game{
-    width:10em;
-    height:10em;
+    width:15em;
+    height:15em;
 }
 
 #programs{
@@ -60,7 +68,7 @@ img{
 h3{
     font-size: 4.4em;
     text-align: center;
-    color:#2F7DAC;
+    color:#CC66FF;
     margin: 1em 0 0.5em;
 
     font-family: Verdana;
@@ -74,7 +82,7 @@ h3{
     top:1em;
     left:2em;
     font-size:10em;
-    color:#2F7DAC;
+    color:#CC66FF;
 
     font-family: Verdana;
     font-style: normal;
@@ -85,7 +93,7 @@ h3{
 h1{
     font-size:2em;
     text-align: center;
-    color:#2F7DAC;
+    color:#CC66FF;
 
     font-family: Verdana;
     font-style: normal;
@@ -97,7 +105,7 @@ h1{
     position:relative;
     height:0%;
     padding-top:100%;
-    background: #FFFFFF;
+    background: #333333;
     border: 0.1em solid #6F6F6F;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px 0px 20px rgba(0, 0, 0, 0.1), inset 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -129,15 +137,16 @@ h1{
     position:absolute;
     width:3.9em;
     height: 1.5em;
-    top:0.1em;
+    top:-0.1em;
     left:-0.6em;
     text-align: center;
-    color: white;
+    color: 333333;
     transform:rotate(-25deg);
     font-size:1.5em;
+    color:#CC66FF;
 
-    background: #2F7DAC;
-    border: 0.1em solid #FFFFFF;
+    background: #333333;
+    border: 0.1em solid #CC66FF;
     border-radius:1em;
 
     font-family: Verdana;
@@ -165,7 +174,7 @@ h1{
     bottom:1em;
     left:0.5em;
     font-size: 1.2em;
-    color:#2F7DAC;
+    color:#CC66FF;
 
 
     font-family: Verdana;
@@ -180,7 +189,7 @@ h1{
     top: 1em;
     font-size:1.5em;
     text-align: center;
-    color:#2F7DAC;
+    color:#CC66FF;
 
     font-family: Verdana;
     font-style: normal;
@@ -228,12 +237,13 @@ h1{
 
 #underground{
     margin-top: 5em;
-    background: radial-gradient(circle farthest-corner at 1000px 1000px, #ffffff, #b9e4ff);
+    background:#333333;
     font-size: 1em;
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
-    color:white;
+    color:#CC66FF;
+    border: 0.1em solid #CC66FF;
 
     font-family: Verdana;
     font-style: normal;

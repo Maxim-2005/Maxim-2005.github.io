@@ -99,7 +99,7 @@ function arrNew(param=0){
 
 function drawLines(){
     ctx.lineWidth=0.25; 
-    ctx.strokeStyle="DeepSkyBlue";
+    ctx.strokeStyle= "#CC66FF";
     // Горизонтальные линии
     ctx.beginPath();
     for(let i=0; i<height; i+=size){
@@ -147,7 +147,7 @@ function copyArr(arr){
 }
 
 function drawCell(){
-    ctx.fillStyle="DeepSkyBlue";
+    ctx.fillStyle="#CC66FF";
     for(let i=0; i<row; i++){
         for(let j=0; j<col; j++){
             if (arr[i][j]){
