@@ -202,6 +202,13 @@ h1{
     height:5em;
 }
 
+.codewarsBage{
+    display: inline-block;
+    height: 2vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #tools{
     grid-template-columns:repeat(7, 14.5em);
     gap:2em;
